@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body{
+    margin: 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 1240px;
+    height: 68px; 
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 40px;
+}
+
+.kasa-header {
+    display: flex;
+    justify-content: flex-end;
+    width: 210px;
+    height: 68px;
+}
+
+.menu{
+    display: flex;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%; 
+}
+
+.menu1, .menu2{
+    text-decoration: none;
+    color: #FF6060;
+}
+
+.menu1{
+    margin-right: 57px;
+}
+
+.menu1:hover{
+    text-decoration: underline #FF6060;
+}
+
+.menu2:hover{
+    text-decoration: underline #FF6060;
+}

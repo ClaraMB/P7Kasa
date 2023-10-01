@@ -1,0 +1,41 @@
+.errorBlock{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 130px;
+}
+
+.error_Number{
+    color: #FF6060;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 288px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 142.6%;
+    margin: auto
+}
+
+.error_Text{
+    color: #FF6060;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%;
+    margin-top: 0;
+}
+
+.error_Link{
+    text-align: center;
+    color: #FF6060;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%;
+    text-decoration-line: underline;
+    margin-bottom: 159px;
+}

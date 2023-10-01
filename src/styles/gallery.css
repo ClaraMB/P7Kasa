@@ -1,0 +1,10 @@
+.background{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1245px;
+    height: auto;
+    margin: 43px 0 0 100px;
+    border-radius: 25px;
+    background: #F6F6F6;
+    padding-bottom: 56px;
+}
