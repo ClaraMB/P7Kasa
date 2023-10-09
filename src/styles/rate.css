@@ -1,0 +1,11 @@
+.block_stars{
+    display: flex;
+    justify-content: space-evenly;
+    width: 196px;
+    height: 36px;
+}
+
+.star{
+    height:28px;
+    width:28px;
+}

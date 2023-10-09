@@ -1,0 +1,27 @@
+.footer{
+    display: flex;
+    width: 50%;
+    padding: 66px 464px 29px 463px;
+    margin-top: 43px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    background: black;
+}
+
+.footer-text{
+    color:white;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%; 
+}
+
+.kasa-logo-footer{
+    width: 112px;
+    height: 36px;
+    fill:white;
+}

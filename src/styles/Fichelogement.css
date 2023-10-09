@@ -1,0 +1,40 @@
+.tag_block{
+    display: flex;
+    column-gap: 10px;
+}
+
+.description_logement{
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.location_logement{
+    color: #FF6060;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.title_logement{
+    color: #FF6060;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.tag_and_star_block{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 190px;
+}
+
+.star_rating{
+    display: flex;
+    justify-content: flex-end;
+}
+
