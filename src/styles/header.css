@@ -9,7 +9,13 @@ body{
     justify-content: space-between;
     width: 1240px;
     height: 68px; 
+<<<<<<< HEAD
     margin: 20px auto;
+=======
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 40px;
+>>>>>>> aaa900380a474e9d76a56bc1e93a25ba353e23ec
 }
 
 .kasa-header {

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .carrousel{
     display: flex;
     height: 415px;
@@ -34,4 +35,23 @@ img.slider_img{
   z-index: 1;
   transform: rotate(90deg);
   cursor: pointer;
+=======
+.container{
+    width: 1240px;
+    height: 415px;
+    margin: 0 auto;
+}
+
+.slider{
+    position: "relative";
+    height: "100%";
+}
+
+img{
+  width: "100%";
+  height: "100%";
+  border-radius: "10px";
+  background-size: "cover";
+  background-position: "center";
+>>>>>>> aaa900380a474e9d76a56bc1e93a25ba353e23ec
 }

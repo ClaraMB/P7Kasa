@@ -1,7 +1,13 @@
 .footer{
     display: flex;
+<<<<<<< HEAD
     margin-top: 43px;
     padding:45px ;
+=======
+    width: 50%;
+    padding: 66px 464px 29px 463px;
+    margin-top: 43px;
+>>>>>>> aaa900380a474e9d76a56bc1e93a25ba353e23ec
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
@@ -23,6 +29,9 @@
     width: 112px;
     height: 36px;
     fill:white;
+<<<<<<< HEAD
     margin-bottom: 25px;
     margin-top: 20px;
+=======
+>>>>>>> aaa900380a474e9d76a56bc1e93a25ba353e23ec
 }

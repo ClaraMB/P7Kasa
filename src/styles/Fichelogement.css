@@ -4,7 +4,11 @@
 }
 
 .description_logement{
+<<<<<<< HEAD
     margin-left: 150px;
+=======
+    margin-left: 100px;
+>>>>>>> aaa900380a474e9d76a56bc1e93a25ba353e23ec
     display: flex;
     flex-direction: column;
 }
@@ -29,7 +33,11 @@
 .tag_and_star_block{
     display: flex;
     justify-content: space-between;
+<<<<<<< HEAD
     margin-left: 150px;
+=======
+    margin-left: 100px;
+>>>>>>> aaa900380a474e9d76a56bc1e93a25ba353e23ec
     margin-right: 190px;
 }
 
@@ -38,6 +46,7 @@
     justify-content: flex-end;
 }
 
+<<<<<<< HEAD
 .collapse_container{
     display: flex;
     margin-left:150px;
@@ -57,3 +66,5 @@ ul{
     padding-inline-start: 0px;
     margin:0;
 }
+=======
+>>>>>>> aaa900380a474e9d76a56bc1e93a25ba353e23ec

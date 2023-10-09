@@ -1,6 +1,9 @@
 import Tags from './../components/Tags';
 import Rate from './../components/Rate';
+<<<<<<< HEAD
 import Collapse from './../components/Collapse';
+=======
+>>>>>>> aaa900380a474e9d76a56bc1e93a25ba353e23ec
 import Carrousel from './Carrousel';
 import logements from './../datas/logements.json';
 import { useParams } from "react-router-dom";
@@ -17,6 +20,7 @@ const FicheLogement = () => {
         return <Tags key={i} nom={tags} />;
     });
     
+<<<<<<< HEAD
      /* Équipements */
     const equipements = ficheLogement?.equipments.map((equipment, i) => {
         return (
@@ -26,15 +30,24 @@ const FicheLogement = () => {
         );
     });
 
+=======
+>>>>>>> aaa900380a474e9d76a56bc1e93a25ba353e23ec
     return (
     
     <div>
         {/* Carrousel */}
+<<<<<<< HEAD
         <div className="carrousel">
             <Carrousel pictures={ficheLogement?.pictures} /> {/* Affiche les images du logement*/}
         </div>
 
     <div className='main_block'>
+=======
+        <div className='carrousel'>
+            <Carrousel pictures={ficheLogement?.pictures} /> {/* Affiche les images du logement*/}
+        </div>
+
+>>>>>>> aaa900380a474e9d76a56bc1e93a25ba353e23ec
         {/* Titre + localisation */}
         <div className="description_logement">
             <span className="title_logement">{ficheLogement?.title}</span> {/* Affiche le titre du logement. le ? est une protection en cas d'erreur si fichelogement est null ou undefined*/}
@@ -51,6 +64,7 @@ const FicheLogement = () => {
             </div>
         </div>
 
+<<<<<<< HEAD
             {/* Collapse Description + Equipement */}
         <div className='collapse_container'>
             <div className="collapse_description">
@@ -63,6 +77,8 @@ const FicheLogement = () => {
         </div>
     </div>
 
+=======
+>>>>>>> aaa900380a474e9d76a56bc1e93a25ba353e23ec
     </div>
         )
 }

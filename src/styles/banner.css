@@ -1,8 +1,15 @@
 .banner{
     position: relative;
+<<<<<<< HEAD
     height: 230px;
     width: 1239px;
     margin: 63px auto;
+=======
+    margin-top: 63px;
+    height: 230px;
+    width: 1239px;
+    margin-left: 100px;
+>>>>>>> aaa900380a474e9d76a56bc1e93a25ba353e23ec
 }
 
 .banner img {
