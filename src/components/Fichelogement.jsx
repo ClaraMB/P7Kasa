@@ -1,5 +1,6 @@
 import Tags from './../components/Tags';
 import Rate from './../components/Rate';
+import Collapse from './../components/Collapse';
 import Carrousel from './Carrousel';
 import logements from './../datas/logements.json';
 import { useParams } from "react-router-dom";
@@ -16,14 +17,24 @@ const FicheLogement = () => {
         return <Tags key={i} nom={tags} />;
     });
     
+     /* Équipements */
+    const equipements = ficheLogement?.equipments.map((equipment, i) => {
+        return (
+        <ul key={i}>
+            {equipment}
+        </ul>
+        );
+    });
+
     return (
     
     <div>
         {/* Carrousel */}
-        <div className='carrousel'>
+        <div className="carrousel">
             <Carrousel pictures={ficheLogement?.pictures} /> {/* Affiche les images du logement*/}
         </div>
 
+    <div className='main_block'>
         {/* Titre + localisation */}
         <div className="description_logement">
             <span className="title_logement">{ficheLogement?.title}</span> {/* Affiche le titre du logement. le ? est une protection en cas d'erreur si fichelogement est null ou undefined*/}
@@ -39,6 +50,18 @@ const FicheLogement = () => {
                 <Rate score={ficheLogement.rating} />
             </div>
         </div>
+
+            {/* Collapse Description + Equipement */}
+        <div className='collapse_container'>
+            <div className="collapse_description">
+                <Collapse title="Description" content={ficheLogement?.description}/>
+            </div>
+
+            <div className="collapse_equipement">
+                <Collapse title="Équipements" content={equipements} />
+            </div>
+        </div>
+    </div>
 
     </div>
         )

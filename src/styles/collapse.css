@@ -1,17 +1,14 @@
 
 .collapse {
     border: 1px solid #EEE;
-    width: 1023px;
-    height: 47px;
+    width: 100%;
     border-radius: 5px;
     background: #FF6060;
     margin: auto;
     margin-top: 20px;
+    display: block;
 }
 
-.active.collapse {
-    transform: translateY(-100);
-}
 
 .collapse_title {
     display: flex;
@@ -24,14 +21,13 @@
     font-weight: 500;
     line-height: 171.6%;
     margin-left: 15px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .chevron {
     position: relative;
     width: 24px;
     height: 13.712px;
-    background: #FFF;
     margin-right: 15px;
 }
 
@@ -40,7 +36,6 @@
 }
 
 .collapse_content {
-    visibility: hidden;
     opacity: 0;
     overflow: hidden;
     padding: 0 1rem;
@@ -50,7 +45,6 @@
 }
 
 .active .collapse_content {
-    visibility: visible;
     height: auto;
     max-height: 9999px ;
     overflow: visible;
@@ -65,4 +59,6 @@
     color: #FF6060;
     transition: all 0.2s;
     transform: translateY(0);
+    display: block;
+    position: relative;
 }

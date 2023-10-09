@@ -1,16 +1,30 @@
 import React from "react";
 import { useState } from "react";
 import '../styles/carrousel.css';
+import chevron from '../assets/chevron.png';
 
 
 function Carrousel(props) {
     const pictures = props.pictures; 
-    const [currentIndex, SetCurrentUser] = useState(0);
+    const [currentIndex, setCurrentIndex] = useState(0); /* Utilisation du Hook UseState. Index de la première image à 0*/
 	
+    const length = pictures.length;
+
+    const goToPreviousSlide = () => {
+        setCurrentIndex(currentIndex === length - 1 ? 0 : currentIndex - 1);
+    };
+    
+    const goToNextSlide = () => {
+        setCurrentIndex(currentIndex === 0 ? length - 1 : currentIndex + 1);
+    };
+
+
     return(
         <div className="slider">
+            <img className='chevron_carrousel_left' src={chevron} alt='chevron gauche'onClick={goToPreviousSlide}/>
+            <img className='chevron_carrousel_right' src={chevron} alt='chevron droit' onClick={goToNextSlide}/>
         {pictures.map((image, index) => (
-            <img key={index} src={image} alt=""></img>
+            <img className="slider_img" key={index} src={image} alt=""></img>
             ))}
         </div>
     );  

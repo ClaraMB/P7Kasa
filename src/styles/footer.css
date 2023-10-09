@@ -1,8 +1,7 @@
 .footer{
     display: flex;
-    width: 50%;
-    padding: 66px 464px 29px 463px;
     margin-top: 43px;
+    padding:45px ;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
@@ -24,4 +23,6 @@
     width: 112px;
     height: 36px;
     fill:white;
+    margin-bottom: 25px;
+    margin-top: 20px;
 }

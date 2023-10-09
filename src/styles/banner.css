@@ -1,9 +1,8 @@
 .banner{
     position: relative;
-    margin-top: 63px;
     height: 230px;
     width: 1239px;
-    margin-left: 100px;
+    margin: 63px auto;
 }
 
 .banner img {

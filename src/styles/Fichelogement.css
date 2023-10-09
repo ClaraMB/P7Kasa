@@ -4,7 +4,7 @@
 }
 
 .description_logement{
-    margin-left: 100px;
+    margin-left: 150px;
     display: flex;
     flex-direction: column;
 }
@@ -29,7 +29,7 @@
 .tag_and_star_block{
     display: flex;
     justify-content: space-between;
-    margin-left: 100px;
+    margin-left: 150px;
     margin-right: 190px;
 }
 
@@ -38,3 +38,22 @@
     justify-content: flex-end;
 }
 
+.collapse_container{
+    display: flex;
+    margin-left:150px;
+    margin-right: 150px;
+    column-gap: 60px;
+}
+
+.collapse_description{
+    width: 100%;
+}
+
+.collapse_equipement{
+    width: 100%;
+}
+
+ul{
+    padding-inline-start: 0px;
+    margin:0;
+}

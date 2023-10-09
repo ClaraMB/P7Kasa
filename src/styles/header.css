@@ -9,9 +9,7 @@ body{
     justify-content: space-between;
     width: 1240px;
     height: 68px; 
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 40px;
+    margin: 20px auto;
 }
 
 .kasa-header {

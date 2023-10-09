@@ -1,5 +1,5 @@
 import React from 'react';
-import emptyStar from '../assets/star-regular.svg';
+import emptyStar from '../assets/star-regular.png';
 import starSolid from '../assets/star-solid.png';
 import '../styles/rate.css';
 
