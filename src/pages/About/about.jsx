@@ -10,7 +10,7 @@ const About = () => {
     return (
     <div className="about">
         <main>
-            <Banner texte="" image={imgBanner} />
+            <Banner texte="" image={imgBanner} classes="banner-2" />
 
             <div className="collapse_block">
                 {about.map((item) => {

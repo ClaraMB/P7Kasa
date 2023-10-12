@@ -1,10 +1,8 @@
 import Tags from './../components/Tags';
 import Rate from './../components/Rate';
-<<<<<<< HEAD
 import Collapse from './../components/Collapse';
-=======
->>>>>>> aaa900380a474e9d76a56bc1e93a25ba353e23ec
 import Carrousel from './Carrousel';
+import Host from './../components/Host';
 import logements from './../datas/logements.json';
 import { useParams } from "react-router-dom";
 import '../styles/Fichelogement.css';
@@ -20,7 +18,6 @@ const FicheLogement = () => {
         return <Tags key={i} nom={tags} />;
     });
     
-<<<<<<< HEAD
      /* Équipements */
     const equipements = ficheLogement?.equipments.map((equipment, i) => {
         return (
@@ -30,41 +27,38 @@ const FicheLogement = () => {
         );
     });
 
-=======
->>>>>>> aaa900380a474e9d76a56bc1e93a25ba353e23ec
     return (
     
     <div>
         {/* Carrousel */}
-<<<<<<< HEAD
         <div className="carrousel">
             <Carrousel pictures={ficheLogement?.pictures} /> {/* Affiche les images du logement*/}
         </div>
 
     <div className='main_block'>
-=======
-        <div className='carrousel'>
-            <Carrousel pictures={ficheLogement?.pictures} /> {/* Affiche les images du logement*/}
-        </div>
-
->>>>>>> aaa900380a474e9d76a56bc1e93a25ba353e23ec
         {/* Titre + localisation */}
         <div className="description_logement">
-            <span className="title_logement">{ficheLogement?.title}</span> {/* Affiche le titre du logement. le ? est une protection en cas d'erreur si fichelogement est null ou undefined*/}
-            <span className="location_logement">{ficheLogement?.location}</span> {/* Affiche l'emplacement du logement*/}
-        </div>
-    
-        <div className='tag_and_star_block'>
-            {/* Tags */}
-            <div className='tag_block'>{tagsLogement}</div>
-    
-            {/* Rating */}
-            <div className='star_rating'>
-                <Rate score={ficheLogement.rating} />
+            <div>
+                <div className='title-and-location'>
+                    <span className="title_logement">{ficheLogement?.title}</span> {/* Affiche le titre du logement. le ? est une protection en cas d'erreur si fichelogement est null ou undefined*/}
+                    <span className="location_logement">{ficheLogement?.location}</span> {/* Affiche l'emplacement du logement*/}
+                </div>
+        
+                {/* Tags */}
+                <div className='tag_block'>{tagsLogement}</div>
+            </div>
+            <div className='host-and-star'>
+                {/* Host */}
+                <div className="host">
+                    <Host name={ficheLogement?.host.name} picture={ficheLogement?.host.picture}/>
+                </div>
+                {/* Rating */}
+                <div className='star_rating'>
+                        <Rate score={ficheLogement.rating} />
+                </div>
             </div>
         </div>
 
-<<<<<<< HEAD
             {/* Collapse Description + Equipement */}
         <div className='collapse_container'>
             <div className="collapse_description">
@@ -77,8 +71,6 @@ const FicheLogement = () => {
         </div>
     </div>
 
-=======
->>>>>>> aaa900380a474e9d76a56bc1e93a25ba353e23ec
     </div>
         )
 }

@@ -3,12 +3,19 @@
     flex-wrap: wrap;
     width: 1245px;
     height: auto;
-<<<<<<< HEAD
     margin: 43px auto;
-=======
-    margin: 43px 0 0 100px;
->>>>>>> aaa900380a474e9d76a56bc1e93a25ba353e23ec
     border-radius: 25px;
     background: #F6F6F6;
     padding-bottom: 56px;
+}
+
+@media (max-width: 769px) {
+    /* Vos styles pour les écrans de largeur minimale de 769px ici */
+    .background{
+        background:white;
+        flex-direction: column;
+        margin-top: 20px;
+        width: 536px;
+        padding-left: 24px;
+    }
 }

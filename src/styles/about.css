@@ -1,7 +1,11 @@
 .collapse_block{
-<<<<<<< HEAD
     width:60%;
-=======
->>>>>>> aaa900380a474e9d76a56bc1e93a25ba353e23ec
     margin: auto;
+}
+
+@media (max-width: 769px) {
+    /* Vos styles pour les écrans de largeur minimale de 769px ici */
+    .collapse_block{
+        width: 93%;
+    }
 }

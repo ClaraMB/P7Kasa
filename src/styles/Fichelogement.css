@@ -4,11 +4,13 @@
 }
 
 .description_logement{
-<<<<<<< HEAD
-    margin-left: 150px;
-=======
-    margin-left: 100px;
->>>>>>> aaa900380a474e9d76a56bc1e93a25ba353e23ec
+    width:1240px;
+    margin :auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-and-location{
     display: flex;
     flex-direction: column;
 }
@@ -33,12 +35,8 @@
 .tag_and_star_block{
     display: flex;
     justify-content: space-between;
-<<<<<<< HEAD
-    margin-left: 150px;
-=======
-    margin-left: 100px;
->>>>>>> aaa900380a474e9d76a56bc1e93a25ba353e23ec
-    margin-right: 190px;
+    width:1240px;
+    margin :auto;
 }
 
 .star_rating{
@@ -46,11 +44,10 @@
     justify-content: flex-end;
 }
 
-<<<<<<< HEAD
 .collapse_container{
     display: flex;
-    margin-left:150px;
-    margin-right: 150px;
+    width:1240px;
+    margin :auto;
     column-gap: 60px;
 }
 
@@ -66,5 +63,68 @@ ul{
     padding-inline-start: 0px;
     margin:0;
 }
-=======
->>>>>>> aaa900380a474e9d76a56bc1e93a25ba353e23ec
+.host-and-star{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.host{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.photo-host{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+
+.name-host{
+    color: #FF6060;
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%;
+    margin-right: 10px;
+    width: 78px;
+}
+
+@media (max-width: 769px) {
+    /* Vos styles pour les écrans de largeur minimale de 769px ici */
+    .collapse_container{
+        flex-direction: column;
+        width: 525px;
+    }
+    ul{
+        text-transform: uppercase;
+    }
+    .description_logement{
+        width: 525px;
+        display: flex;
+        flex-direction: column;
+    }
+    .tag_and_star_block{
+        width: 525px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .title_logement{
+        margin-top:10px;
+        flex-direction: column;
+        display: flex;
+        align-items: flex-start;
+    }
+    .host-and-star{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .photo-host{
+        width: 55px;
+        height: 55px;
+    }
+}

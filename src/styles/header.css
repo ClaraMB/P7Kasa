@@ -9,13 +9,7 @@ body{
     justify-content: space-between;
     width: 1240px;
     height: 68px; 
-<<<<<<< HEAD
     margin: 20px auto;
-=======
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 40px;
->>>>>>> aaa900380a474e9d76a56bc1e93a25ba353e23ec
 }
 
 .kasa-header {
@@ -31,7 +25,7 @@ body{
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
-    line-height: 142.6%; 
+    line-height: 300%; 
 }
 
 .menu1, .menu2{
@@ -49,4 +43,19 @@ body{
 
 .menu2:hover{
     text-decoration: underline #FF6060;
+}
+
+@media (max-width: 769px) {
+    /* Vos styles pour les écrans de largeur minimale de 769px ici */
+    .navbar{
+        width: auto;
+        margin:20px;
+    }
+    .menu{
+        line-height: 400%;
+        font-size: 20px;
+    }
+    .menu1{
+        margin-right: 20px;
+    }
 }

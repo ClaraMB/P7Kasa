@@ -9,3 +9,16 @@
     height:28px;
     width:28px;
 }
+
+@media (max-width: 769px) {
+    /* Vos styles pour les écrans de largeur minimale de 769px ici */
+    .block_stars{
+        margin-top: 30px;
+        width:140px;
+    }
+    .star{
+        height:18px;
+        width:18px;
+        margin-right: 10px;
+    }
+}

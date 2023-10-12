@@ -1,15 +1,8 @@
 .banner{
     position: relative;
-<<<<<<< HEAD
     height: 230px;
     width: 1239px;
     margin: 63px auto;
-=======
-    margin-top: 63px;
-    height: 230px;
-    width: 1239px;
-    margin-left: 100px;
->>>>>>> aaa900380a474e9d76a56bc1e93a25ba353e23ec
 }
 
 .banner img {
@@ -30,4 +23,28 @@ h1 {
     width: 1145px;
     text-align: center;
     margin-top: 78px;
+}
+
+@media (max-width: 769px) {
+    /* Vos styles pour les écrans de largeur minimale de 769px ici */
+    .banner{
+        width: auto;
+        height: 111px;
+        margin:20px 20px 0px 20px;
+    }
+    .banner-2{
+        height: 300px;
+    }
+    .banner img {
+        border-radius:10px;
+    }
+
+    h1 {
+        text-align: left;
+        font-size:30px;
+        width:271px;
+        line-height: 100%;
+        margin-top:31px;
+        margin-left:16px;
+    }
 }

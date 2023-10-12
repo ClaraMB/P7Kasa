@@ -39,3 +39,18 @@
     text-decoration-line: underline;
     margin-bottom: 159px;
 }
+
+@media (max-width: 769px) {
+    /* Vos styles pour les écrans de largeur minimale de 769px ici */
+    .error_Number{
+        font-size: 96px;
+    }
+    .error_Text{
+        font-size: 20px;
+        margin: auto;
+        width: 260px;
+    }
+    .error_Link{
+        margin-top:200px;
+    }
+}
