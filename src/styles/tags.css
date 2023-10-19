@@ -9,7 +9,8 @@
 
 .tag_content{
     color: #FFF;
-    text-align: center;
+    display: flex;
+    align-items: center;
     font-family: Montserrat;
     font-size: 14px;
     font-style: normal;

@@ -11,21 +11,18 @@ function Carrousel(props) {
     const length = pictures.length;
 
     const goToPreviousSlide = () => {
-        setCurrentIndex(currentIndex === length - 1 ? 0 : currentIndex - 1);
+        setCurrentIndex(currentIndex === 0 ? length - 1 : currentIndex - 1);
     };
     
     const goToNextSlide = () => {
-        setCurrentIndex(currentIndex === 0 ? length - 1 : currentIndex + 1);
+        setCurrentIndex(currentIndex === length - 1 ? 0 : currentIndex + 1);
     };
-
 
     return(
         <div className="slider">
             <img className='chevron_carrousel_left' src={chevron} alt='chevron gauche'onClick={goToPreviousSlide}/>
             <img className='chevron_carrousel_right' src={chevron} alt='chevron droit' onClick={goToNextSlide}/>
-        {pictures.map((image, index) => (
-            <img className="slider_img" key={index} src={image} alt=""></img>
-            ))}
+            <img className="slider_img" src={pictures[currentIndex]} alt="" />
         </div>
     );  
 }
