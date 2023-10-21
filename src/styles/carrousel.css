@@ -2,10 +2,12 @@
     display: flex;
     height: 415px;
     flex-direction: row;
+    margin-bottom: 20px;
 }
 
 .slider{
     width: 1240px;
+    height:415px;
     margin: 0px auto 20px auto;
     object-fit: cover;
     overflow: hidden;
@@ -14,7 +16,8 @@
 
 img.slider_img{
   position: relative;
-  top: -200px;
+  height:inherit;
+  width: inherit;
 }
 
 .chevron_carrousel_left{
@@ -45,9 +48,11 @@ img.slider_img{
     width:525px;
     height: 289px;
   }
+
   img.slider_img{
-    top: -48px;
+    top: 0px;
   }
+
   .chevron_carrousel_left{
     margin-top: 100px;
     height: 65px;
