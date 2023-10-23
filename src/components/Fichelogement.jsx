@@ -4,7 +4,7 @@ import Collapse from './../components/Collapse';
 import Carrousel from './Carrousel';
 import Host from './../components/Host';
 import logements from './../datas/logements.json';
-import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import '../styles/Fichelogement.css';
 
 const FicheLogement = () => {
@@ -12,6 +12,11 @@ const FicheLogement = () => {
     const { id } = useParams();
 
     const ficheLogement = logements.find((logements) => logements.id === id);
+
+     /* Si le logement n'a pas été trouvé on effectue la redirection vers la page d'erreur*/
+     if (!ficheLogement) {
+        return <Navigate to="/Error" />;
+    }
 
     /* Tags */
     const tagsLogement = ficheLogement.tags.map((tags, i) => {
@@ -70,7 +75,6 @@ const FicheLogement = () => {
             </div>
         </div>
     </div>
-
     </div>
         )
 }
