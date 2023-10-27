@@ -18,10 +18,16 @@ function Carrousel(props) {
         setCurrentIndex(currentIndex === length - 1 ? 0 : currentIndex + 1);
     };
 
+    const showChevrons = length > 1; /* Condition pour afficher les chevrons que s'il y a plus d'une image à afficher*/
+    
     return(
         <div className="slider">
-            <img className='chevron_carrousel_left' src={chevron} alt='chevron gauche'onClick={goToPreviousSlide}/>
-            <img className='chevron_carrousel_right' src={chevron} alt='chevron droit' onClick={goToNextSlide}/>
+            {showChevrons && ( /* Si showChevrons est TRUE alors on affiche les chevrons*/
+                <>
+                    <img className='chevron_carrousel_left' src={chevron} alt='chevron gauche' onClick={goToPreviousSlide}/>
+                    <img className='chevron_carrousel_right' src={chevron} alt='chevron droit' onClick={goToNextSlide}/>
+                </>
+            )}
             <img className="slider_img" src={pictures[currentIndex]} alt="" />
         </div>
     );  
