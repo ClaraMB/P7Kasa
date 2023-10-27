@@ -13,8 +13,8 @@ const FicheLogement = () => {
 
     const ficheLogement = logements.find((logements) => logements.id === id);
 
-     /* Si le logement n'a pas été trouvé on effectue la redirection vers la page d'erreur*/
-     if (!ficheLogement) {
+    /* Si le logement n'a pas été trouvé on effectue la redirection vers la page d'erreur*/
+    if (!ficheLogement) {
         return <Navigate to="/Error" />;
     }
 
